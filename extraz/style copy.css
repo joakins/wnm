@@ -478,319 +478,6 @@ img {
     }
 }
 
-
-
-
-
-
-/* =========================================
-   Component: Hero
-   ========================================= */
-.hero-section {
-    position: relative;
-    height: 100vh;
-    /* Full screen */
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    /* Reset margin since header is floating */
-    padding-top: 80px;
-    /* Space for the header */
-}
-
-.hero-slideshow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.hero-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.hero-slide.active {
-    opacity: 1;
-}
-
-.hero-slideshow .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.75) 0%,
-        rgba(0, 0, 0, 0.6) 50%,
-        rgba(0, 0, 0, 0.4) 100%
-    );
-    z-index: 1;
-    /* Above slides, below content */
-}
-
-.hero-container {
-    position: relative;
-    z-index: 2;
-    /* Ensure content is above overlay */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-/* Hero Content Wrapper */
-.hero-content-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
-}
-
-.hero-content.active {
-    opacity: 1;
-    visibility: visible;
-    position: relative;
-}
-
-/* Centered text on the left - IMPROVED LEGIBILITY */
-.hero-text-center {
-    max-width: 700px;
-    margin: 0;
-    padding: 0;
-}
-
-.hero-text-center h1 {
-    font-family: var(--font-serif);
-    font-size: 4.5rem;
-    line-height: 1.1;
-    color: #FFFFFF;
-    font-weight: 400;
-    margin: 0 0 1.5rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero-text-center h1 em {
-    font-style: italic;
-    font-weight: 400;
-}
-
-/* IMPROVED SUBTITLE LEGIBILITY */
-.hero-subtitle {
-    color: #FFFFFF;
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    max-width: 550px;
-    font-weight: 500;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.3);
-    padding: 15px 20px;
-    border-radius: 8px;
-    backdrop-filter: blur(2px);
-}
-
-/* Alternative: If you don't want background blur, use this version instead */
-/*
-.hero-subtitle {
-    color: #FFFFFF;
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    max-width: 550px;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-*/
-
-.btn-white {
-    background-color: var(--color-white);
-    color: var(--color-primary);
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white:hover {
-    background-color: var(--color-secondary);
-    transform: translateY(-2px);
-    color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.arrow-icon {
-    font-weight: 400;
-}
-
-/* Animation for content */
-@keyframes contentFadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero-content.active .hero-text-center h1,
-.hero-content.active .hero-subtitle,
-.hero-content.active .btn-white {
-    animation: contentFadeInUp 0.6s ease-out forwards;
-}
-
-.hero-content.active .hero-text-center h1 {
-    animation-delay: 0.1s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-.hero-content.active .hero-subtitle {
-    animation-delay: 0.3s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-.hero-content.active .btn-white {
-    animation-delay: 0.5s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-/* Indicator Dots */
-.hero-indicators {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    z-index: 3;
-}
-
-.hero-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.hero-indicator.active {
-    background-color: var(--color-white);
-    width: 30px;
-    border-radius: 5px;
-}
-
-.hero-indicator:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .hero-text-center h1 {
-        font-size: 4.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.15rem;
-        max-width: 500px;
-        padding: 12px 18px;
-    }
-}
-
-@media (max-width: 900px) {
-    .hero-section {
-        min-height: 600px;
-    }
-    
-    .hero-text-center h1 {
-        font-size: 3.5rem;
-    }
-    
-    .hero-text-center {
-        max-width: 90%;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-        max-width: 100%;
-        padding: 12px 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-text-center h1 {
-        font-size: 2.8rem;
-    }
-    
-    .hero-indicators {
-        bottom: 20px;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.95rem;
-        padding: 10px 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text-center h1 {
-        font-size: 2.2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
-    
-    .btn-white {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* =========================================
    Component: Stats Bar (New)
    ========================================= */
@@ -1067,12 +754,6 @@ img {
     color: var(--color-text-muted);
 }
 
-
-
-
-
-
-
 /* =========================================
    Component: Services Section (Redesign)
    ========================================= */
@@ -1084,12 +765,17 @@ img {
 
 .services-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    gap: 1.5rem;
     margin-top: 4rem;
 }
 
-/* Service Card Styles */
+.service-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .service-card-modern {
     background: var(--color-white);
     padding: 2.5rem;
@@ -1106,43 +792,20 @@ img {
     transform: translateY(-3px);
 }
 
-/* Service Icon Images - Full width */
-.service-icon-image {
-    width: 100%;
+.service-icon {
+    width: 48px;
+    height: 48px;
     margin-bottom: 1.5rem;
-    overflow: hidden;
-    border-radius: 12px;
+    color: var(--color-accent);
+    /* Brand Red */
 }
 
-.service-icon-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.service-card-modern:hover .service-icon-image img {
-    transform: scale(1.05);
-}
-
-/* Alternative fixed height version (optional) */
-/*
-.service-icon-image {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 1.5rem;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.service-icon-image img {
+/* SVG Icon styling */
+.service-icon svg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease;
+    stroke-width: 1.5;
 }
-*/
 
 .service-card-modern h3 {
     font-family: var(--font-serif);
@@ -1159,171 +822,156 @@ img {
     margin-bottom: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .services-wrapper {
-        gap: 1.5rem;
-    }
-    
-    .service-card-modern {
-        padding: 2rem;
-    }
-    
-    .service-card-modern h3 {
-        font-size: 1.3rem;
-    }
+/* Large CTA Card */
+.service-cta-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 500px;
+    /* Ensure height on mobile if stacked */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3rem;
+    color: var(--color-white);
+}
+
+.cta-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('corporate-team.png');
+    /* Reusing existing asset */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    z-index: 2;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 3;
+}
+
+.cta-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+}
+
+.cta-title em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.btn-cta {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition-fast);
+}
+
+.btn-cta:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
     .services-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .service-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-cta-card {
+        min-height: 400px;
     }
 }
 
 @media (max-width: 600px) {
-    .services-wrapper {
+    .service-col {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .service-card-modern {
-        padding: 1.5rem;
-    }
-    
-    .service-icon-image {
-        margin-bottom: 1rem;
     }
 }
 
-/* Remove old column styles since we're not using them anymore */
-/* .service-col styles are no longer needed */
+/* Stats Cards */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
 
-
-/* =========================================
-   Clickable Service Card Styles
-   ========================================= */
-
-/* Make cards clickable while maintaining styling */
-.service-card-modern {
+.stat-card {
     background: var(--color-white);
-    padding: 2.5rem;
+    padding: 2.5rem 2rem;
     border-radius: 16px;
-    height: 100%;
-    transition: var(--transition-fast);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Remove default link underline and color */
-.service-card-modern,
-.service-card-modern:hover,
-.service-card-modern:focus,
-.service-card-modern:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Hover effect for clickable cards */
-.service-card-modern:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transform: translateY(-3px);
-}
-
-/* Optional: Add a subtle indicator that cards are clickable */
-.service-card-modern::after {
-    content: '→';
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 1.2rem;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    color: var(--color-accent);
-}
-
-.service-card-modern:hover::after {
-    opacity: 1;
-    transform: translateX(5px);
-}
-
-/* Service Icon Images - Full width */
-.service-icon-image {
-    width: 100%;
-    margin-bottom: 1.5rem;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.service-icon-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+    justify-content: flex-start;
+    text-align: left;
     transition: transform 0.3s ease;
+    height: 100%;
 }
 
-.service-card-modern:hover .service-icon-image img {
-    transform: scale(1.05);
+.stat-card:hover {
+    transform: translateY(-5px);
 }
 
-.service-card-modern h3 {
+.stat-number {
     font-family: var(--font-serif);
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     color: var(--color-primary);
+    line-height: 1;
     margin-bottom: 1rem;
-    font-weight: 400;
-    transition: color 0.3s ease;
+    display: block;
 }
 
-.service-card-modern:hover h3 {
-    color: var(--color-accent);
-}
-
-.service-card-modern p {
+.stat-card p {
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.5;
     color: var(--color-text-muted);
-    margin-bottom: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .service-card-modern {
-        padding: 2rem;
+@media (max-width: 900px) {
+    .about-text {
+        font-size: 2rem;
     }
-    
-    .service-card-modern h3 {
-        font-size: 1.3rem;
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .service-card-modern {
-        padding: 1.5rem;
-    }
-    
-    .service-icon-image {
-        margin-bottom: 1rem;
-    }
-    
-    /* Remove arrow indicator on mobile for cleaner look */
-    .service-card-modern::after {
-        display: none;
+    .stats-grid {
+        grid-template-columns: 1fr;
     }
 }
-
-
-
-
-
-
-
-
 
 /* =========================================
    Footer & Animations
@@ -1873,8 +1521,6 @@ img {
     letter-spacing: 0.5px;
 }
 
-
-
 /* Defines Us Section */
 .defines-section {
     padding: 6rem 0;
@@ -1995,8 +1641,6 @@ img {
         font-size: 2.5rem;
     }
 }
-
-
 
 /* -------------------------------------------------- */
 /* ---------------- Contact Page -------------------- */
