@@ -2802,6 +2802,10 @@ img {
             color: var(--color-accent);
         }
 
+
+
+
+
         .solution-overview {
             padding: 5rem 0;
         }
@@ -3206,4 +3210,76 @@ img {
                 font-size: 1.75rem;
             }
         }
+
+
+
+       /* Overview Section - Mobile Responsive */
+        @media (max-width: 768px) {
+            .solution-overview .row {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 2rem !important;
+            }
+            
+            .solution-overview .overview-content {
+                order: 1 !important;
+            }
+            
+            .solution-overview .overview-image {
+                order: 2 !important;
+            }
+        }
     
+
+        /* Overview Section Styles */
+        .solution-overview {
+            padding: 5rem 0;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .overview-content h2 {
+            font-family: var(--font-serif);
+            margin-bottom: 1.5rem;
+        }
+
+        .overview-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Mobile Responsive - Text on top, Image below */
+        @media (max-width: 768px) {
+            .overview-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .overview-content {
+                order: 1; /* Text first */
+            }
+            
+            .overview-image {
+                order: 2; /* Image below text */
+            }
+        }
+
+        /* Tablet Responsive (optional) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .overview-grid {
+                gap: 2.5rem;
+            }
+        }

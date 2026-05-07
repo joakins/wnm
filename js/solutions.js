@@ -341,18 +341,44 @@
                 ]
             },
             
-            'mechanical-machinery': {
-                title: 'Industrial Machinery',
-                subtitle: 'Installation, maintenance, and optimization<br> of industrial machinery and equipment.',
-                overview: 'We provide comprehensive industrial machinery services including installation, preventive maintenance, repair, and performance optimization. Our certified technicians ensure your equipment operates at peak efficiency with minimal downtime.',
-                image: 'img/service-6.jpg',
+
+            //COMPOSITES & CONSTRUCTION RELATED
+            'profiles-grp': {
+                title: 'GRP Profiles',
+                subtitle: 'Customizable structural profiles for versatile <br> construction applications.',
+                overview: 'GRP profiles are engineered structural components made from glass reinforced plastic, designed for strength, durability, and versatility. They are widely used in construction, infrastructure, and industrial projects requiring lightweight yet robust materials. <br> <br> These profiles offer excellent resistance to corrosion and environmental factors, making them suitable for both indoor and outdoor applications. Their adaptability allows them to be used in platforms, walkways, supports, and frameworks.',
+                image: 'images/solutions/grpProfiles.jpg',
                 features: [
-                    { icon: 'fa-solid fa-robot', title: 'Automation', desc: 'Advanced automation solutions' },
-                    { icon: 'fa-solid fa-chart-line', title: 'Predictive Maintenance', desc: 'Proactive equipment monitoring' },
-                    { icon: 'fa-solid fa-microchip', title: 'Smart Integration', desc: 'Industry 4.0 ready systems' },
-                    { icon: 'fa-solid fa-wrench', title: 'Repair Services', desc: 'Expert diagnostics and repairs' },
-                    { icon: 'fa-solid fa-charging-station', title: 'Performance Optimization', desc: 'Maximize equipment efficiency' },
-                    { icon: 'fa-solid fa-headset', title: 'Technical Support', desc: 'Round-the-clock assistance' }
+                    { 
+                        icon: 'fa-solid fa-robot', 
+                        title: 'Corrosion Resistance', 
+                        desc: 'Resistant to rust, chemicals, and environmental exposure, ensuring long-term reliability in challenging conditions such as marine or industrial environments.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-chart-line', 
+                        title: 'Lightweight Design', 
+                        desc: 'Simplifies handling and installation processes, reducing construction time and associated labor costs without sacrificing performance.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-microchip', 
+                        title: 'Structural Strength', 
+                        desc: 'Provides reliable load-bearing capacity, ensuring safety and durability in structural and support applications.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-wrench', 
+                        title: 'Low Maintenance Needs', 
+                        desc: 'Minimal upkeep required due to resistance to wear and environmental damage, lowering long-term operational costs.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-charging-station', 
+                        title: 'Non-Conductive Nature', 
+                        desc: 'Enhances safety by preventing electrical conductivity, making it ideal for use in sensitive or hazardous environments.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-headset', 
+                        title: 'Custom Fabrication', 
+                        desc: 'Easily tailored to specific dimensions and shapes, enabling flexible design and application across various projects.' 
+                    }
                 ],
                 benefits: [
                     '24/7 technical support availability',
@@ -363,23 +389,57 @@
                     'Emergency repair response team'
                 ],
                 related: [
-                    { title: 'Industrial Construction', desc: 'Facility construction', image: 'img/service-3.jpg', link: 'solutionDetail.html?id=wood-plastic' },
-                    { title: 'HVAC Systems', desc: 'Industrial climate control', image: 'img/service-4.jpg', link: 'solution_detail.html?id=mechanical-hvac' }
+                    { 
+                        title: 'Manhole Covers', 
+                        desc: 'Heavy-duty covers for secure underground access systems', 
+                        image: 'images/solutions/mhc.jpg',
+                        link: 'solutionDetail.html?id=covers-manhole' 
+                    },
+                    { 
+                        title: 'Manlock bolts', 
+                        desc: 'Industrial climate control', 
+                        image: 'images/solutions/manlockBolts.jpg',
+                        link: 'solutionDetail.html?id=manlock-bolts' 
+                    }
                 ]
             },
             
-            'architectural-residential': {
-                title: 'Residential Design',
-                subtitle: 'Creative and functional architectural designs<br> that bring your dream home to life.',
-                overview: 'Our architectural team creates stunning, livable spaces that reflect your personal style and meet your practical needs. From initial concept to final construction documents, we guide you through every step of the design process.',
-                image: 'img/service-1.jpg',
+            'covers-manhole': {
+                title: 'Manhole Covers',
+                subtitle: 'Heavy-duty covers for secure underground access systems',
+                overview: 'Manhole covers are essential components used to provide secure access to underground utility systems such as drainage, sewage, and electrical networks. They are designed to ensure safety while allowing maintenance access when needed. <br> <br> Constructed from durable materials, these covers are built to withstand heavy loads and harsh environmental conditions. Their design prioritizes safety, longevity, and reliability in both urban and industrial environments.',
+                image: 'images/solutions/mhc.jpg',
                 features: [
-                    { icon: 'fa-solid fa-pen-ruler', title: 'Custom Design', desc: 'Tailored to your lifestyle and preferences' },
-                    { icon: 'fa-solid fa-swatchbook', title: 'Material Selection', desc: 'Expert guidance on finishes and materials' },
-                    { icon: 'fa-solid fa-cube', title: '3D Visualization', desc: 'See your home before it is built' },
-                    { icon: 'fa-solid fa-chart-line', title: 'Space Planning', desc: 'Optimal use of available space' },
-                    { icon: 'fa-solid fa-leaf', title: 'Sustainable Design', desc: 'Eco-friendly architectural solutions' },
-                    { icon: 'fa-solid fa-handshake', title: 'Permit Assistance', desc: 'Help with approvals and permits' }
+                    { 
+                        icon: 'fa-solid fa-pen-ruler', 
+                        title: 'High Load Capacity', 
+                        desc: 'Engineered to withstand heavy vehicular and pedestrian loads, ensuring durability and safety in high-traffic areas such as roads and industrial zones.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-swatchbook', 
+                        title: 'Anti-Slip Surface', 
+                        desc: 'Textured design enhances traction, reducing the risk of slips and accidents, especially in wet or hazardous conditions.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-cube', 
+                        title: 'Corrosion Resistance', 
+                        desc: 'Resistant to environmental damage, ensuring long-term performance even in harsh weather or chemically exposed environments.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-chart-line', 
+                        title: 'Secure Locking Mechanism', 
+                        desc: 'Prevents unauthorized access and enhances safety by securely covering underground systems.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-leaf', 
+                        title: 'Long Service Life', 
+                        desc: 'Durable construction ensures extended lifespan, reducing replacement frequency and overall maintenance costs.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-handshake', 
+                        title: 'Easy Installation', 
+                        desc: 'Designed for efficient placement and removal, simplifying maintenance operations and reducing downtime.' 
+                    }
                 ],
                 benefits: [
                     'Award-winning design team',
@@ -390,23 +450,57 @@
                     'Material and vendor recommendations'
                 ],
                 related: [
-                    { title: 'Residential Construction', desc: 'Build your dream home', image: 'img/service-1.jpg', link: 'solution_detail.html?id=construction-residential' },
-                    { title: 'Interior Design', desc: 'Beautiful interior spaces', image: 'img/service-6.jpg', link: 'solution_detail.html?id=architectural-interior' }
+                    { 
+                        title: 'GRP Profiles', 
+                        desc: 'Customizable structural profiles for versatile construction applications', 
+                        image: 'images/solutions/grpProfiles.jpg',
+                        link: 'solutionDetail.html?id=profiles-grp' 
+                    },
+                    { 
+                        title: 'Manlock bolts', 
+                        desc: 'Secure fastening solutions for critical infrastructure applications', 
+                        image: 'images/solutions/manlockBolts.jpg',
+                        link: 'solutionDetail.html?id=manlock-bolts' 
+                    }
                 ]
             },
             
-            'architectural-commercial': {
-                title: 'Commercial Design',
-                subtitle: 'Innovative commercial spaces that enhance productivity<br> and brand identity.',
-                overview: 'We design commercial environments that inspire, function efficiently, and reflect your brand identity. Our portfolio includes offices, retail spaces, restaurants, hotels, and mixed-use developments.',
-                image: 'img/service-2.jpg',
+            'manlock-bolts': {
+                title: 'Manlock bolts',
+                subtitle: 'Secure fastening solutions for critical infrastructure <br> applications.',
+                overview: 'Manlock bolts are specialized fastening components designed to secure manhole covers and similar infrastructure elements. They provide enhanced safety by preventing unauthorized access and ensuring structural stability. <br> <br> Built for durability and reliability, these bolts are resistant to tampering and environmental conditions. They play a critical role in maintaining the integrity and security of underground systems..',
+                image: 'images/solutions/manlockBolts.jpg',
                 features: [
-                    { icon: 'fa-solid fa-chart-line', title: 'Workflow Optimization', desc: 'Spaces designed for productivity' },
-                    { icon: 'fa-solid fa-palette', title: 'Brand Integration', desc: 'Reflect your brand through design' },
-                    { icon: 'fa-solid fa-building-user', title: 'Code Compliance', desc: 'Full regulatory adherence' },
-                    { icon: 'fa-solid fa-cube', title: '3D Modeling', desc: 'Virtual walkthroughs before construction' },
-                    { icon: 'fa-solid fa-leaf', title: 'Sustainable Design', desc: 'LEED and green building practices' },
-                    { icon: 'fa-solid fa-chart-simple', title: 'Value Engineering', desc: 'Cost-effective design solutions' }
+                    { 
+                        icon: 'fa-solid fa-chart-line', 
+                        title: 'Tamper-Resistant Design', 
+                        desc: 'Prevents unauthorized removal or interference, enhancing security and protecting critical infrastructure components from vandalism or theft.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-palette', 
+                        title: 'High Strength Material', 
+                        desc: 'Manufactured from durable materials to withstand stress and environmental exposure, ensuring long-lasting performance.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-building-user', 
+                        title: 'Corrosion Resistance', 
+                        desc: 'Resistant to rust and environmental degradation, maintaining functionality even in harsh outdoor conditions.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-cube', 
+                        title: 'Secure Fastening', 
+                        desc: 'Provides firm and reliable locking, ensuring that manhole covers remain safely in place under various conditions.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-leaf', 
+                        title: 'Easy Maintenance Access', 
+                        desc: 'Allows authorized personnel to access secured systems efficiently without compromising security.' 
+                    },
+                    { 
+                        icon: 'fa-solid fa-chart-simple', 
+                        title: 'Long-Term Reliability', 
+                        desc: 'Engineered for consistent performance over time, reducing the need for frequent replacements or repairs.' 
+                    }
                 ],
                 benefits: [
                     'Rapid design turnaround time',
@@ -417,8 +511,18 @@
                     'Bidding and contractor coordination'
                 ],
                 related: [
-                    { title: 'Commercial Construction', desc: 'Build commercial spaces', image: 'img/service-2.jpg', link: 'solution_detail.html?id=construction-commercial' },
-                    { title: 'Urban Planning', desc: 'Community development', image: 'img/service-3.jpg', link: 'solution_detail.html?id=architectural-urban' }
+                    { 
+                        title: 'Manhole Covers', 
+                        desc: 'Heavy-duty covers for secure underground access systems', 
+                        image: 'images/solutions/mhc.jpg',
+                        link: 'solutionDetail.html?id=covers-manhole' 
+                    },
+                    { 
+                        title: 'GRP Profiles', 
+                        desc: 'Customizable structural profiles for versatile construction applications', 
+                        image: 'images/solutions/grpProfiles.jpg',
+                        link: 'solutionDetail.html?id=profiles-grp' 
+                    }
                 ]
             },
             
