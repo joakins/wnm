@@ -5,35 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact WNM Ltd - Integrated Business Solutions Provider.">
-    <title>Contact Us | WNM Ltd</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | WNM Ltd | Integrated Business Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>W</text></svg>">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo">
-                <img src="images/wnm-logo.png" alt="WNM Ltd" style="height: 40px;">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#" class="active">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </header>
+    <!-- Navigation with Vertical Flyout Mega Menu -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <img src="images/wnm-logo.png" alt="WNM Ltd" style="height: 40px;">
+        </a>
+        <nav class="main-nav">
+            <ul class="main-menu">
+                <li><a href="about.html">About</a></li>
+                
+                <!-- Solutions Dropdown -->
+                <li class="nav-item-with-dropdown">
+                    <a href="solutions.html" class="nav-link-with-arrow">
+                        Solutions
+                        <span class="arrow-icon">›</span>
+                    </a>
+                    <div class="mega-menu">
+                        <ul class="mega-menu-column">
+                            <li class="mega-menu-item">
+                                <a href="#" class="mega-menu-title" style="color: black;">
+                                    Raised Flooring
+                                    <span class="sub-arrow">›</span>
+                                </a>
+                                <ul class="submenu-level-3">
+                                    <li><a href="solutionDetail.html?id=flooring-outdoor">Outdoor Flooring</a></li>
+                                    <li><a href="solutionDetail.html?id=flooring-indoor">Indoor Flooring</a></li>
+                                    <li><a href="solutionDetail.html?id=wood-plastic">WPC</a></li>
+                                    <li><a href="solutionDetail.html?id=tiles-ceramic">Ceramic Tiles</a></li>
+                                    <li><a href="solutionDetail.html?id=glass-reinforced">GRP</a></li>
+                                </ul>
+                            </li>
+                            <li class="mega-menu-item">
+                                <a href="#" class="mega-menu-title" style="color: black;">
+                                    Composite & Construction
+                                    <span class="sub-arrow">›</span>
+                                </a>
+                                <ul class="submenu-level-3">
+                                    <li><a href="solutionDetail.html?id=profiles-grp">GRP Profiles</a></li>
+                                    <li><a href="solutionDetail.html?id=covers-manhole">Manhole Covers</a></li>
+                                    <li><a href="solutionDetail.html?id=manlock-bolts">Manlock Bolts</a></li>
+                                </ul>
+                            </li>
+                            <li class="mega-menu-item">
+                                <a href="#" class="mega-menu-title" style="color: black;">
+                                    Marinas & Working Harbours
+                                    <span class="sub-arrow">›</span>
+                                </a>
+                                <ul class="submenu-level-3">
+                                    <li><a href="solutionDetail.html?id=floating-pontoon">Floating Pontoon Jetties</a></li>
+                                </ul>
+                            </li>
+                            <li class="mega-menu-item">
+                                <a href="#" class="mega-menu-title" style="color: black;">
+                                    Floating Pontoon Jetties
+                                    <span class="sub-arrow">›</span>
+                                </a>
+                                <ul class="submenu-level-3">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Case Study 1</a></li>
+                                    <li><a href="#">Case Study 2</a></li>
+                                    <li><a href="#">Case Study 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="mega-menu-item">
+                                <a href="#" class="mega-menu-title" style="color: black;">
+                                    Access Control
+                                    <span class="sub-arrow">›</span>
+                                </a>
+                                <ul class="submenu-level-3">
+                                    <li><a href="solutionDetail.html?id=lock-cyber">Cyber lock</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</header>
 
     <main>
         <!-- Contact Hero Section -->
@@ -163,9 +229,9 @@
                     <div class="footer-list">
                         <h5>Menu</h5>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="solutions.html">Solutions</a></li>
                         </ul>
                     </div>
 
@@ -201,7 +267,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
