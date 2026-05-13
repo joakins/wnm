@@ -1,12 +1,13 @@
+
 // Projects data
 const projectsData = [
     {
         id: 'project-001',
-        title: 'Lekki Innovation Hub Construction',
-        client: 'Tech Innovation Africa Ltd',
-        category: 'construction',
+        title: 'Afriexim Bank',
+        client: 'Afriexim Bank',
+        category: 'Raised Flooring',
         year: 2024,
-        image: 'images/projects/lekki-hub.jpg',
+        image: 'images/projects/afreximBank.jpg',
         shortDesc: 'Complete infrastructure development for a modern tech hub with state-of-the-art facilities',
         description: 'Comprehensive construction project involving the development of a 5-story innovation hub facility featuring flexible office spaces, collaborative areas, and cutting-edge infrastructure.',
         challenge: 'The project required coordination between multiple contractors and strict adherence to project timeline while maintaining safety standards in an active commercial area.',
@@ -24,20 +25,21 @@ const projectsData = [
             'Employed 150+ workers'
         ],
         gallery: [
-            'images/projects/lekki-hub-1.jpg',
-            'images/projects/lekki-hub-2.jpg',
-            'images/projects/lekki-hub-3.jpg',
-            'images/projects/lekki-hub-4.jpg'
+            'images/projects/gallery/AfrieximBank_pic1.jpg',
+            'images/projects/gallery/AfrieximBank_pic2.jpg',
+            'images/projects/gallery/AfrieximBank_pic3.jpg',
+            'images/projects/gallery/AfrieximBank_pic4.jpg',
+            'images/projects/gallery/AfrieximBank_pic5.jpg'
         ],
         relatedProjects: ['project-003', 'project-005']
     },
     {
         id: 'project-002',
-        title: 'VI Commercial Complex - HVAC Installation',
-        client: 'Urban Properties Development',
-        category: 'mechanical',
+        title: 'Babs Oyeleye MHC',
+        client: 'Babs Oyeleye MHC',
+        category: 'Composite and Construction',
         year: 2023,
-        image: 'images/projects/vi-complex.jpg',
+        image: 'images/projects/babsOyeleye.jpg',
         shortDesc: 'Advanced HVAC system installation in a premium commercial complex',
         description: 'Installation of state-of-the-art HVAC systems in a 12-story commercial complex with advanced energy management and automation features.',
         challenge: 'The building was partially occupied during installation, requiring careful scheduling and minimal disruption to ongoing business operations.',
@@ -55,20 +57,21 @@ const projectsData = [
             'Smart building integration'
         ],
         gallery: [
-            'images/projects/vi-complex-1.jpg',
-            'images/projects/vi-complex-2.jpg',
-            'images/projects/vi-complex-3.jpg',
-            'images/projects/vi-complex-4.jpg'
+            'images/projects/gallery/babsOyeleye_pic1.jpg',
+            'images/projects/gallery/babsOyeleye_pic2.jpg',
+            'images/projects/gallery/babsOyeleye_pic3.jpg',
+            'images/projects/gallery/babsOyeleye_pic4.jpg',
+            'images/projects/gallery/babsOyeleye_pic5.jpg'
         ],
         relatedProjects: ['project-004', 'project-006']
     },
     {
         id: 'project-003',
-        title: 'Port Authority Flooring Rehabilitation',
-        client: 'Nigeria Ports Authority',
-        category: 'infrastructure',
+        title: 'ECAD',
+        client: 'ECAD',
+        category: 'Raised Flooring',
         year: 2024,
-        image: 'images/projects/port-flooring.jpg',
+        image: 'images/projects/ECAD.jpg',
         shortDesc: 'Large-scale industrial flooring rehabilitation using advanced composite materials',
         description: 'Complete flooring rehabilitation of port facilities covering 50,000 sq meters using GRP and composite materials for superior durability and safety.',
         challenge: 'Project required working in an active port environment with strict operational constraints and minimal downtime allowance.',
@@ -86,20 +89,21 @@ const projectsData = [
             'Cost savings of ₦4M'
         ],
         gallery: [
-            'images/projects/port-flooring-1.jpg',
-            'images/projects/port-flooring-2.jpg',
-            'images/projects/port-flooring-3.jpg',
-            'images/projects/port-flooring-4.jpg'
+            'images/projects/gallery/ECAD_pic1a.jpg',
+            'images/projects/gallery/ECAD_pic1b.jpg',
+            'images/projects/gallery/ECAD_pic2.jpg',
+            'images/projects/gallery/ECAD_pic2a.jpg',
+            'images/projects/gallery/ECAD_pic3.jpg'
         ],
         relatedProjects: ['project-001', 'project-007']
     },
     {
         id: 'project-004',
-        title: 'Marina Pontoon Jetty Installation',
-        client: 'Lekki Marina Development',
-        category: 'marine',
+        title: 'Eko Hotel Sky Lounge',
+        client: 'Eko Hotel Sky Lounge',
+        category: 'Raised Flooring',
         year: 2023,
-        image: 'images/projects/marina-jetty.jpg',
+        image: 'images/projects/EkoHotelLounge.jpg',
         shortDesc: 'Custom-designed floating pontoon jetty system for premium yacht marina',
         description: 'Design and installation of modular floating pontoon jetty system accommodating 50+ vessels with advanced mooring systems.',
         challenge: 'Installation in challenging marine conditions with strict environmental compliance requirements.',
@@ -117,20 +121,21 @@ const projectsData = [
             'Client satisfaction: 99%'
         ],
         gallery: [
-            'images/projects/marina-jetty-1.jpg',
-            'images/projects/marina-jetty-2.jpg',
-            'images/projects/marina-jetty-3.jpg',
-            'images/projects/marina-jetty-4.jpg'
+            'images/projects/gallery/ekoHotel_pic1.jpg',
+            'images/projects/gallery/ekoHotel_pic2.jpg',
+            'images/projects/gallery/ekoHotel_pic3.jpg',
+            'images/projects/gallery/ekoHotel_pic4.jpg',
+            'images/projects/gallery/ekoHotel_pic5.jpg'
         ],
         relatedProjects: ['project-008', 'project-002']
     },
     {
         id: 'project-005',
-        title: 'Epe Industrial Park Infrastructure',
-        client: 'Epe Industrial Consortium',
-        category: 'infrastructure',
+        title: 'Ifako-Ijaye',
+        client: 'Ifako-Ijaye',
+        category: 'Composite and Construction',
         year: 2023,
-        image: 'images/projects/epe-park.jpg',
+        image: 'images/projects/ifakoIjaye.jpg',
         shortDesc: 'Comprehensive industrial park development with utilities and access control',
         description: 'Full infrastructure development including roads, utilities, and integrated access control systems for 200-hectare industrial park.',
         challenge: 'Large-scale project requiring coordination across multiple contractors and stakeholders.',
@@ -148,20 +153,21 @@ const projectsData = [
             'On budget completion'
         ],
         gallery: [
-            'images/projects/epe-park-1.jpg',
-            'images/projects/epe-park-2.jpg',
-            'images/projects/epe-park-3.jpg',
-            'images/projects/epe-park-4.jpg'
+            'images/projects/gallery/ifakoIjaye_pic1.jpg',
+            'images/projects/gallery/ifakoIjaye_pic2.jpg',
+            'images/projects/gallery/ifakoIjaye_pic3.jpg',
+            'images/projects/gallery/ifakoIjaye_pic4.jpg',
+            'images/projects/gallery/ifakoIjaye_pic5.jpg'
         ],
         relatedProjects: ['project-003', 'project-009']
     },
     {
         id: 'project-006',
-        title: 'BRT Terminal Mechanical Systems',
-        client: 'Lagos Metropolitan Transportation',
-        category: 'mechanical',
+        title: 'Ikoyi',
+        client: 'Ikoyi',
+        category: 'Composite and Construction',
         year: 2022,
-        image: 'images/projects/brt-terminal.jpg',
+        image: 'images/projects/ikoyi.jpg',
         shortDesc: 'Complete mechanical systems installation for modern BRT terminal',
         description: 'Installation of comprehensive mechanical systems including HVAC, plumbing, and automated controls in state-of-the-art BRT terminal.',
         challenge: 'Project required compliance with strict transportation safety standards and minimal disruption to ongoing transport operations.',
@@ -179,20 +185,21 @@ const projectsData = [
             'Safety standards exceeded'
         ],
         gallery: [
-            'images/projects/brt-1.jpg',
-            'images/projects/brt-2.jpg',
-            'images/projects/brt-3.jpg',
-            'images/projects/brt-4.jpg'
+            'images/projects/gallery/ifakoIjaye_pic1.jpg',
+            'images/projects/gallery/ifakoIjaye_pic2.jpg',
+            'images/projects/gallery/ifakoIjaye_pic3.jpg',
+            'images/projects/gallery/ifakoIjaye_pic4.jpg',
+            'images/projects/gallery/ifakoIjaye_pic5.jpg'
         ],
         relatedProjects: ['project-002', 'project-010']
     },
     {
         id: 'project-007',
-        title: 'Ikoyi Residential Building Construction',
-        client: 'Prime Estates Ltd',
-        category: 'construction',
+        title: 'FMN',
+        client: 'FMN',
+        category: 'Composite and Construction',
         year: 2024,
-        image: 'images/projects/ikoyi-residential.jpg',
+        image: 'images/projects/FMN.jpg',
         shortDesc: 'Luxury residential complex with premium finishing and modern amenities',
         description: 'Construction of 15-story luxury residential building featuring 80 units, state-of-the-art amenities, and smart building features.',
         challenge: 'High-end finishing requirements and strict timeline on prestigious residential property.',
@@ -210,20 +217,21 @@ const projectsData = [
             'Award-winning design'
         ],
         gallery: [
-            'images/projects/ikoyi-1.jpg',
-            'images/projects/ikoyi-2.jpg',
-            'images/projects/ikoyi-3.jpg',
-            'images/projects/ikoyi-4.jpg'
+            'images/projects/gallery/FMN_pic1.jpg',
+            'images/projects/gallery/FMN_pic2.jpg',
+            'images/projects/gallery/FMN_pic3.jpg',
+            'images/projects/gallery/FMN_pic4.jpg',
+            'images/projects/gallery/FMN_pic5.jpg'
         ],
         relatedProjects: ['project-001', 'project-011']
     },
     {
         id: 'project-008',
-        title: 'Lagos Island Manhole Covers Replacement',
-        client: 'Lagos Waste Management Board',
-        category: 'infrastructure',
+        title: 'MTN Roof Top Screenwall',
+        client: 'MTN Nigeria',
+        category: 'Composite and Construction',
         year: 2023,
-        image: 'images/projects/manhole-covers.jpg',
+        image: 'images/projects/MTN.jpg',
         shortDesc: 'Large-scale replacement of utility access covers with advanced composite materials',
         description: 'Replacement of 2,000+ manhole covers across Lagos Island with GRP composite covers for improved durability and safety.',
         challenge: 'City-wide project requiring coordination with multiple utilities and minimal traffic disruption.',
@@ -241,20 +249,21 @@ const projectsData = [
             'Community satisfaction'
         ],
         gallery: [
-            'images/projects/manhole-1.jpg',
-            'images/projects/manhole-2.jpg',
-            'images/projects/manhole-3.jpg',
-            'images/projects/manhole-4.jpg'
+            'images/projects/gallery/MTN_pic1.jpg',
+            'images/projects/gallery/MTN_pic2.jpg',
+            'images/projects/gallery/MTN_pic3.jpg',
+            'images/projects/gallery/MTN_pic4.jpg',
+            'images/projects/gallery/MTN_pic1.jpg'
         ],
         relatedProjects: ['project-003', 'project-005']
     },
     {
         id: 'project-009',
-        title: 'Lagos Eko Atlantic City Infrastructure',
-        client: 'Eko Atlantic Development Co.',
-        category: 'construction',
+        title: 'Onne',
+        client: 'Onne',
+        category: 'Composite and Construction',
         year: 2023,
-        image: 'images/projects/eko-atlantic.jpg',
+        image: 'images/projects/onne.jpg',
         shortDesc: 'Mega project infrastructure for Africa\'s premier waterfront development',
         description: 'Infrastructure development supporting Africa\'s largest waterfront development including utilities, roads, and building systems.',
         challenge: 'Complex mega-project requiring coordination across multiple phases and international standards.',
@@ -272,20 +281,21 @@ const projectsData = [
             'Sustainable design features'
         ],
         gallery: [
-            'images/projects/eko-atlantic-1.jpg',
-            'images/projects/eko-atlantic-2.jpg',
-            'images/projects/eko-atlantic-3.jpg',
-            'images/projects/eko-atlantic-4.jpg'
+            'images/projects/gallery/onne_pic1.jpg',
+            'images/projects/gallery/onne_pic2.jpg',
+            'images/projects/gallery/onne_pic3.jpg',
+            'images/projects/gallery/onne_pic4.jpg',
+            'images/projects/gallery/onne_pic5.jpg'
         ],
         relatedProjects: ['project-005', 'project-004']
     },
     {
         id: 'project-010',
-        title: 'Corporate Access Control System Implementation',
-        client: 'Zenith Bank Plc',
-        category: 'mechanical',
+        title: 'Port Harcourt',
+        client: 'Port Harcourt',
+        category: 'Composite and Construction',
         year: 2024,
-        image: 'images/projects/access-control.jpg',
+        image: 'images/projects/portHarcourt.jpg',
         shortDesc: 'Advanced CyberLock access control system installation across 15 facilities',
         description: 'Implementation of enterprise-wide CyberLock access control system across 15 banking facilities with centralized management.',
         challenge: 'Critical infrastructure requiring zero downtime and stringent security protocols.',
@@ -303,20 +313,21 @@ const projectsData = [
             'Employee training completed'
         ],
         gallery: [
-            'images/projects/access-1.jpg',
-            'images/projects/access-2.jpg',
-            'images/projects/access-3.jpg',
-            'images/projects/access-4.jpg'
+            'images/projects/gallery/portHarcourt_pic1.jpg',
+            'images/projects/gallery/portHarcourt_pic2.jpg',
+            'images/projects/gallery/portHarcourt_pic3.jpg',
+            'images/projects/gallery/portHarcourt_pic4.jpg',
+            'images/projects/gallery/portHarcourt_pic5.jpg'
         ],
         relatedProjects: ['project-006', 'project-002']
     },
     {
         id: 'project-011',
-        title: 'Gbagada Commercial Complex Development',
-        client: 'Gbagada Developments Ltd',
-        category: 'construction',
+        title: 'Sencillo Beach House',
+        client: 'Sencillo Beach House',
+        category: 'Raised Flooring',
         year: 2023,
-        image: 'images/projects/gbagada-complex.jpg',
+        image: 'images/projects/sencillo.jpg',
         shortDesc: 'Mixed-use commercial complex with retail, office, and restaurant spaces',
         description: 'Development of 8-story mixed-use commercial complex featuring retail outlets, premium office spaces, and fine dining establishments.',
         challenge: 'Mixed-use project with diverse tenant requirements and complex coordination needs.',
@@ -334,10 +345,11 @@ const projectsData = [
             'Tenant satisfaction: 96%'
         ],
         gallery: [
-            'images/projects/gbagada-1.jpg',
-            'images/projects/gbagada-2.jpg',
-            'images/projects/gbagada-3.jpg',
-            'images/projects/gbagada-4.jpg'
+            'images/projects/gallery/Sencillo_pic1a.jpg',
+            'images/projects/gallery/Sencillo_pic1b.jpg',
+            'images/projects/gallery/Sencillo_pic2.jpg',
+            'images/projects/gallery/Sencillo_pic3.jpg',
+            'images/projects/gallery/Sencillo_pic4.jpg'
         ],
         relatedProjects: ['project-001', 'project-007']
     }
